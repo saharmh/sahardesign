@@ -1,0 +1,150 @@
+---
+layout: default
+section_id: pages
+services_left:
+- title: BRANDING &amp; IDENTITY
+  desc: Before we start our project together I’d like to get to know you and learn about your business so we have a better connection and understanding. In addition I research your competitors and create a full spec ready for our next stages to ensure the best quality delivered.
+  image: images/service-branding.png
+- title: USER EXPERIENCE
+  desc: I usually get started by creating concepts for your project so you can be involved in all the decisions to ensure it reflects your vision and your goals. I love to create beautiful designs but most importantly make it work for your audience.
+  image: images/service-ux.png
+services_right:
+- title: USER INTERFACE
+  desc: In this stage, I take the design and make working prototypes before going to final production. By using the latest web technologies to ensure your website is future-friendly and supported by all major browsers.
+  image: images/service-ui.png
+- title: DEVELOPMENT
+  desc: In this stage, I take the design and make working prototypes before going to final production. By using the latest web technologies to ensure your website is future-friendly and supported by all major browsers.
+  image: images/service-frontend.png
+
+approach:
+- title: 01. RESEARCH
+  desc: Before we start our project together I’d like to get to know you and learn about your business so we have a better connection and understanding. In addition I research your competitors and create a full spec ready for our next stages to ensure the best quality delivered.
+  image: images/process_01.png
+- title: 02. DESIGN
+  desc: I usually get started by creating concepts for your project so you can be involved in all the decisions to ensure it reflects your vision and your goals. I love to create beautiful designs but most importantly make it work for your audience.
+  image: images/process_02.png
+- title: 03. BUILD
+  desc: In this stage, I take the design and make working prototypes before going to final production. By using the latest web technologies to ensure your website is future-friendly and supported by all major browsers.
+  image: images/process_03.png
+- title: 04. LAUNCH
+  desc: Once the website is tested, complete and working perfectly, with your approval we will launch it. Once the website is live, I continue to make refinements to constantly improve your project.
+  image: images/process_04.png
+
+principles:
+- title: Work with passion
+  desc: Lorem ipsum dolor sit amet adipisicing elit. Maxime eos facilis
+    veniam obcaecati, fugiat illo soluta accusantium?
+  image: images/value-passion.png
+- title: Fail and Learn
+  desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
+    nihil accusamus sint et repudiandae.
+  image: images/value-fail-learn.png
+- title: Repeat and Success
+  desc: Dolor sit amet, consectetur adipisicing elit. Maxime eos facilis
+    veniam obcaecati, fugiat illo soluta accusantium?
+  image: images/value-repeat-passion.png
+---
+
+<div class="full centered-text services">
+  <div class="four spacing"></div>
+  <div class="section-title">
+    <div class="row">
+        <h1 class="wow slideInUp">Services</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="full no-padding light-grey">
+  <div class="four spacing"></div>
+  <div class="row">
+    <div class="medium-6 columns">
+      {% for services in page.services_left %}
+        <div class="services-wrapper">
+          <div class="services">
+            <img src="{{site.url}}/{{services.image}}" alt="">
+            <div class="info">
+              <h3>{{services.title}}</h3>
+              <p>{{services.desc}}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="medium-6 columns">
+      {% for services in page.services_right %}
+        <div class="services-wrapper">
+          <div class="services">
+            <img src="{{site.url}}/{{services.image}}" alt="">
+            <div class="info">
+              <h3>{{services.title}}</h3>
+              <p>{{services.desc}}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="four spacing"></div>
+</div>
+
+
+
+<div class="four spacing"></div>
+<div class="section-title">
+  <div class="row">
+    <div class="medium-10 medium-centered columns">
+      <h2>Approach</h2>
+      <p>We have principles to do things</p>
+    </div>
+  </div>
+</div>
+{% for approach in page.approach %}
+  <div class="full no-padding">
+    <div class="row">
+        <div class="medium-6 columns">
+          <img src="{{site.url}}/{{approach.image}}" alt="">
+        </div>
+        <div class="medium-6 columns">
+          <div class="approach-info right-text">
+            <h3>{{approach.title}}</h3>
+            <p>{{approach.desc}}</p>
+          </div>
+        </div>
+    </div>
+    <div class="four spacing"></div>
+  </div>
+{% endfor %}
+
+<div class="full light-grey centered-text">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>My Values</h2>
+        <p>We have principles to do things</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {% for principle in page.principles %}
+      <div class="large-4 columns">
+        <div class="principle">
+          <img src="{{site.url}}/{{principle.image}}" alt="">
+          <h4>{{principle.title}}</h4>
+          <p>{{principle.desc}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="full centered-text">
+  <div class="two spacing"></div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Have a project in mind?</h2>
+      <div class="two spacing"></div>
+      <a href="{{site.url}}/contact.html" class="button brown boxed">Let's talk</a>
+    </div>
+  </div>
+  <div class="two spacing"></div>
+</div>

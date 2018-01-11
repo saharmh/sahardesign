@@ -1,0 +1,101 @@
+---
+layout: default
+section_id: home
+slides:
+- layout: default
+  title: I design things
+  tagline: Brand, Web site, Print and Packaging
+  image: images/@stock/diamond-white.png
+  background: images/@stock/slide-full-5.jpg
+- layout: alt
+  title: I enjoy my works
+  image_top: images/@stock/welcome.png
+  image_bottom: images/@stock/arrows.png
+  background: images/@stock/slide-full-6.jpg
+
+works_left:
+- title: Golnaz Golnaraghi
+  link_to: work/golnaz-golnaraghi/
+  image: images/work/project-gg.jpg
+  categories: Branding, Website
+
+works_right:
+  - title: Strutta
+    link_to: work/strutta/
+    image: images/work/project-strutta.jpg
+    categories: Branding, Website, UI/UX
+---
+
+<div class="four spacing"></div>
+
+
+<div class="full">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2> Working with startups and entrepreneurs solving their need for an
+          effective online presence, creating professional,
+          attractive mobile applications and websites.</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="four spacing"></div>
+
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="gallery-left-section">
+        <img src="images/home-workspace.jpg" alt="">
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="gallery-right-section">
+        <img src="/images/about-sahar-hosseini.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="full">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>Recent Works</h2>
+        <p>You will love we have done</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="gallery-left-section">
+        {% for work in page.works_left %}
+          <div class="work-wrapper">
+            <a href="{{work.link_to}}" class="work">
+              <img src="{{site.url}}/{{work.image}}" alt="">
+              <div class="info">
+                <h3>{{work.title}}</h3>
+                <p>{{work.categories}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="gallery-right-section">
+        {% for work in page.works_right %}
+          <div class="work-wrapper">
+            <a href="{{work.link_to}}" class="work">
+              <img src="{{site.url}}/{{work.image}}" alt="">
+              <div class="info">
+                <h3>{{work.title}}</h3>
+                <p>{{work.categories}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

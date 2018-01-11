@@ -1,0 +1,92 @@
+---
+layout: default
+section_id: portfolio
+works_left:
+- title: Golnaz Golnaraghi
+  link_to: golnaz-golnaraghi/
+  image: images/work/project-gg.jpg
+  categories: Branding, Website
+
+- title: SideBuy
+  link_to: sidebuy/
+  image: images/work/project-sidebuy.jpg
+  categories: User Interface
+
+- title: Neekoo Philanthropic Society
+  link_to: neekoo/
+  image: images/work/project-neekoo.jpg
+  categories: Branding, Website
+
+- title: Tandar Tanavoli
+  link_to: tandar-tanavoli/
+  image: images/work/project-tandar.jpg
+  categories: Brand, Website
+
+works_right:
+
+- title: Strutta
+  link_to: strutta/
+  image: images/work/project-strutta.jpg
+  categories: Branding, Website, UI/UX
+
+- title: SailMail
+  link_to: sailmail/
+  image: images/work/project-sailmail.jpg
+  categories: Branding, Website, UI/UX
+
+- title: CarnoTech
+  link_to: carnotech/
+  image: images/work/project-carnotech.jpg
+  categories: Branding, Website
+
+- title: QuickMobile
+  link_to: quickmobile/
+  image: images/work/project-qm.jpg
+  categories: UI
+---
+
+<div class="full light-grey centered-text works">
+  <div class="four spacing"></div>
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <h1 class="wow slideInUp">Work</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="four spacing"></div>
+
+
+<div class="full no-padding">
+  <div class="row">
+    <div class="medium-6 columns">
+      {% for work in page.works_left %}
+        <div class="work-wrapper">
+          <a href="{{work.link_to}}" class="work">
+            <img src="{{site.url}}/{{work.image}}" alt="">
+            <div class="info">
+              <h3>{{work.title}}</h3>
+              <p>{{work.categories}}</p>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="medium-6 columns">
+      {% for work in page.works_right %}
+        <div class="work-wrapper">
+          <a href="{{work.link_to}}" class="work">
+            <img src="{{site.url}}/{{work.image}}" alt="">
+            <div class="info">
+              <h3>{{work.title}}</h3>
+              <p>{{work.categories}}</p>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

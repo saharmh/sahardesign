@@ -909,7 +909,6 @@ select {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -3056,7 +3055,6 @@ label.error {
 
 .label {
   display: inline-block;
-  font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -3420,53 +3418,6 @@ ul.pagination {
         color: #96754f; }
   .panel.radius {
     border-radius: 3px; }
-
-/* Pricing Tables */
-.pricing-table {
-  border: solid 1px #DDDDDD;
-  margin-left: 0;
-  margin-bottom: 1.25rem; }
-  .pricing-table * {
-    list-style: none;
-    line-height: 1; }
-  .pricing-table .title {
-    background-color: #333333;
-    color: #EEEEEE;
-    font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-    padding: 0.9375rem 1.25rem;
-    text-align: center; }
-  .pricing-table .price {
-    background-color: #F6F6F6;
-    color: #333333;
-    font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: normal;
-    padding: 0.9375rem 1.25rem;
-    text-align: center; }
-  .pricing-table .description {
-    background-color: #FFFFFF;
-    border-bottom: dotted 1px #DDDDDD;
-    color: #777777;
-    font-size: 0.75rem;
-    font-weight: normal;
-    line-height: 1.4;
-    padding: 0.9375rem;
-    text-align: center; }
-  .pricing-table .bullet-item {
-    background-color: #FFFFFF;
-    border-bottom: dotted 1px #DDDDDD;
-    color: #333333;
-    font-size: 0.875rem;
-    font-weight: normal;
-    padding: 0.9375rem;
-    text-align: center; }
-  .pricing-table .cta-button {
-    background-color: #FFFFFF;
-    padding: 1.25rem 1.25rem 0;
-    text-align: center; }
-
 /* Progress Bar */
 .progress {
   background-color: #F6F6F6;
@@ -3691,43 +3642,6 @@ ul.pagination {
     position: absolute;
     top: 0.625rem;
     right: 1.375rem; }
-
-.side-nav {
-  display: block;
-  font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  list-style-position: outside;
-  list-style-type: none;
-  margin: 0;
-  padding: 0.875rem 0; }
-  .side-nav li {
-    font-size: 0.875rem;
-    font-weight: normal;
-    margin: 0 0 0.4375rem 0; }
-    .side-nav li a:not(.button) {
-      color: #AB8860;
-      display: block;
-      margin: 0;
-      padding: 0.4375rem 0.875rem; }
-      .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-        background: rgba(0, 0, 0, 0.025);
-        color: #c4ac90; }
-      .side-nav li a:not(.button):active {
-        color: #c4ac90; }
-    .side-nav li.active > a:first-child:not(.button) {
-      color: #c4ac90;
-      font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-weight: normal; }
-    .side-nav li.divider {
-      border-top: 1px solid;
-      height: 0;
-      list-style: none;
-      padding: 0;
-      border-top-color: #e6e6e6; }
-    .side-nav li.heading {
-      color: #AB8860;
-      font-size: 0.875rem;
-      font-weight: bold;
-      text-transform: uppercase; }
 
 .split.button {
   position: relative;
@@ -4310,7 +4224,6 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: 'josefin sans', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       padding-left: 1.25rem;

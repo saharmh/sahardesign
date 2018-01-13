@@ -1319,7 +1319,6 @@ form.update-form input.button:hover {
 .modBarGraph .bars h4 {
   font-weight: normal;
   text-transform: capitalize;
-  font-family: "josefin sans";
   margin-bottom: 10px;
   letter-spacing: 1px; }
 
@@ -1379,8 +1378,6 @@ form.update-form input.button:hover {
       font-style: italic; }
     .sidebar .tags a:hover {
       border: 1px solid #; }
-
-
 
 /*Pager */
 .pager {

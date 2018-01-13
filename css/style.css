@@ -15,6 +15,14 @@ purple #9055a3
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Graphik-bold';
+    src: url('../fonts/Graphik-bold/Graphik-bold.woff2') format('woff2'),
+        url('../fonts/Graphik-bold/Graphik-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 @font-face {
     font-family: 'DIN';
@@ -163,10 +171,10 @@ a {
   transition-duration: 0.3s; }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Graphik';
+  font-family: 'Graphik-bold';
   margin-top: 0;}
 h1 {
-  font-family: 'Graphik';
+  font-family: 'Graphik-bold';
  font-weight: bold;
  font-style: normal;
   text-transform: uppercase;
@@ -364,7 +372,7 @@ body {
     -o-transform: translateX(0);
     transform: translateX(0); } }
 /* Navigation */
-.title-area h1 {
+/*.title-area h1 {
   line-height: 1;
   padding-left: 15px; }
   .title-area h1 a {
@@ -374,7 +382,7 @@ body {
     text-transform: uppercase;
     font-weight: 600; }
     .title-area h1 a span {
-      color: #; }
+       }*/
 
 .title-area.white h1 a {
   color: #fff; }
@@ -403,50 +411,11 @@ body {
     max-width: 100%; }
 
 .top-bar-section ul li > a {
-  font-family: "josefin sans";
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
  }
-
-.top-bar-section li:not(.has-form).has-dropdown .dropdown a:not(.button) {
-  line-height: 45px;
-  font-family: "josefin sans";
-  text-transform: capitalize; }
-/* member */
-.project-detail {
-  margin-top: 50px;
-}
-.row .project img {
-  margin-bottom: 10px;
-}
-/* member */
-.member {
-  text-align: center;
-  width: 220px;
-  margin: 0 auto 30px;
-  position: relative; }
-
-.member img, .hire {
-  width: 220px;
-  height: 220px;
-  display: block;
-  margin-bottom: 30px; }
-
-.member img.colored {
-  display: none;
-  position: absolute;
-  top: 0; }
-
-.member:hover img.colored {
-  display: block; }
-
-.member h4 {
-  margin-bottom: 4px; }
-
-.member p.position {
-  margin-bottom: 10px; }
 
 /*socials*/
 ul.socials {

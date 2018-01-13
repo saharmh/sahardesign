@@ -2,6 +2,9 @@
 layout: default
 section_id: portfolio
 title: QuickMobile
+services: UI, UX
+about:   <p>QuickMobile is the pioneer of mobile event apps for meetings, conferences, and exhibitions. Our event apps delight audiences by enhancing the way they network, schedule activities, engage with content, and access information.</p>
+date: 2010
 ---
 
 <div class="full light-grey">
@@ -9,8 +12,8 @@ title: QuickMobile
   <div class="section-title">
     <div class="row">
       <div class="medium-12 medium-centered columns">
-        <h5>UI/UX</h5>
-        <h1>QuickMobile</h1>
+        <p>{{page.services}}</p>
+        <h1>{{page.title}}</h1>
       </div>
     </div>
   </div>
@@ -18,51 +21,37 @@ title: QuickMobile
 
 <div class="section-image">
   <div class="row">
-    <div class="medium-10 medium-centered columns">
-      <img alt="" src="/images/work/project-qm.jpg" />
+    <div class="medium-10 medium-centered columns project">
+      <img alt="{{page.title}}" src="/images/work/project-qm.jpg" />
     </div>
   </div>
 </div>
 
 <div class="two spacing"></div>
 
-<div class="">
+<div class="works">
   <div class="row">
-    <div class='medium-10 medium-centered columns project'>
-      <img alt="quickmobile" src="/images/work/project-qm1.jpg" />
-      <img alt="quickmobile" src="/images/work/project-qm2.jpg" />
-      <img alt="quickmobile" src="/images/work/project-qm3.jpg" />
-      <img alt="quickmobile" src="/images/work/project-qm4.jpg" />
-      <img alt="quickmobile" src="/images/work/project-qm5.jpg" />
-      <img alt="quickmobile" src="/images/work/project-qm6.jpg" />
+    <div class="medium-10 medium-centered columns project">
+      <img alt="{{page.title}}" src="/images/work/project-qm2.jpg" />
+      <img alt="{{page.title}}" src="/images/work/project-qm3.jpg" />
+      <img alt="{{page.title}}" src="/images/work/project-qm4.jpg" />
+      <img alt="{{page.title}}" src="/images/work/project-qm5.jpg" />
   </div>
 </div>
 
+<div class="two spacing"></div>
 
-  <div class="two spacing"></div>
-
+<div class="section-work-title">
   <div class="row">
-    <div class="large-8 columns">
-      <div class="project-intro">
-        <h2>{{page.title}}</h2>
-        <p>Neekoo Philanthropic Society is a registered not-for-profit organization established in Spring 2012 by a group
-          of Iranian-Canadian professionals in Vancouver, BC. Neekoo has no religious or political affiliation.
-          Neekoo provides educational grants to students in financial need through funds raised by sponsors and donors.</p>
-      </div>
-    </div>
-    <div class="large-4 columns">
-      <div class="project-intro">
-        <h4>Date</h4>
-        <p><span>2013-2017</span></p>
-        <h4>Clients</h4>
-        <p><span>Strutta</span></p>
-        <h4>Services</h4>
-        <p><span>Branding, Web Design, UI, UX</span></p>
-      </div>
+    <div class="medium-8 medium-centered columns">
+      {{page.about}}
     </div>
   </div>
 </div>
+
 <hr>
+
+
 <div class="full">
   <div class="section-title">
     <div class="row">

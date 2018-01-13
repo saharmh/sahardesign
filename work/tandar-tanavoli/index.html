@@ -1,7 +1,10 @@
 ---
 layout: default
 section_id: portfolio
-title: The Project
+title: Tandar Tanavoli
+services: Branding, Website
+about: Tandar Tanavoli is an entrepreneur, philanthropist, coach and motivational speaker. Founding Tandar Tanavoli Results International (TTRI) in 2007, with a focus on international lifestyle, personal and professional coaching, as well as motivational educational seminars. She helps motivate her clients move through their self-limiting beliefs, mindset blocks, and emotional resilience while moving forward with clarity to achieve their goals and learn about their passions to deliver their life’s purpose.
+date: 2014
 ---
 
 <div class="full">
@@ -10,7 +13,7 @@ title: The Project
     <div class="row">
       <div class="medium-12 medium-centered columns">
         <p>Client Work</p>
-        <h1 class="">Tandar Tanavoli</h1>
+        <h1>{{page.title}}</h1>
       </div>
     </div>
   </div>
@@ -18,19 +21,18 @@ title: The Project
 
 <div class="section-image">
   <div class="row">
-    <div class="medium-10 medium-centered columns">
-      <img alt="" src="/images/work/project_tandar5.jpg" />
+    <div class="medium-10 medium-centered columns project">
+      <img alt="{{page.title}}" src="/images/work/project_tandar.jpg" />
     </div>
   </div>
 </div>
 
-<div class="full">
-  <div class='row'>
-    <div class='large-12 columns'>
-      <img alt="" src="/images/work/project_tandar2.jpg" />
-      <img alt="" src="/images/work/project_tandar3.jpg" />
-      <img alt="" src="/images/work/project_tandar4.jpg" />
-
+<div class="works">
+  <div class="row">
+    <div class="medium-10 medium-centered columns project">
+      <img alt="{{page.title}}" src="/images/work/project_tandar1.jpg" />
+      <img alt="{{page.title}}" src="/images/work/project_tandar2.jpg" />
+      <img alt="{{page.title}}" src="/images/work/project_tandar3.jpg" />
       <!-- <div class='slides'>
         <div class='slide'>
           <img alt="" src="images/@stock/slide-full-1.jpg" />
@@ -41,43 +43,38 @@ title: The Project
       </div> -->
     </div>
   </div>
-  <div class="two spacing"></div>
+</div>
+
+<div class="two spacing"></div>
+
+<div class="section-work-title">
   <div class="row">
-    <div class="large-8 columns">
-      <div class="project-intro">
-        <h2>{{page.title}}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloribus labore incidunt ratione aspernatur voluptate voluptas, dolor perspiciatis modi odit quos dolorum, hic soluta animi unde at amet eos officia!</p>
-      </div>
-    </div>
-    <div class="large-4 columns">
-      <div class="project-intro">
-        <h4>Date</h4>
-        <p><span>Nov 17, 2011</span></p>
-        <h4>Clients</h4>
-        <p><span>Tandar Tanavoli</span></p>
-        <h4>Services</h4>
-        <p><span>Branding, print</span></p>
-      </div>
+    <div class="medium-8 medium-centered columns">
+      {{page.about}}
     </div>
   </div>
 </div>
+
 <hr>
+
+
 <div class="full">
   <div class="section-title">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2>Related projects</h2>
+        <h2>More Works</h2>
       </div>
     </div>
   </div>
+
   <div class="related-works">
     <div class="row">
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="work-single.html" class="work">
-            <img src="images/@stock/work-1.jpg" alt="">
+          <a href="/work/golnaz-golnaraghi" class="work">
+            <img src="/images/work/project-gg.jpg" alt="">
             <div class="info">
-              <h3>Cooco fashion</h3>
+              <h3>Golnaz Golnaraghi</h3>
               <p>Website, brand</p>
             </div>
           </a>
@@ -85,22 +82,22 @@ title: The Project
       </div>
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="work-single.html" class="work">
-          <img src="images/@stock/work-20.jpg" alt="">
+          <a href="/work/strutta" class="work">
+          <img src="/images/work/project-strutta.jpg" alt="">
           <div class="info">
-            <h3>Dear god</h3>
-            <p>Website, print</p>
+            <h3>Strutta</h3>
+            <p>Website, UI, UX</p>
           </div>
         </a>
         </div>
       </div>
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="work-single.html" class="work">
-            <img src="images/@stock/work-8.jpg" alt="">
+          <a href="/work/sailmail/" class="work">
+            <img src="/images/work/project-sailmail.jpg" alt="">
             <div class="info">
-              <h3>Help Five</h3>
-              <p>Photography</p>
+              <h3>SailMail</h3>
+              <p>Product, UI, UX</p>
             </div>
           </a>
         </div>

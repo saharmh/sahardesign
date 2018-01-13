@@ -536,6 +536,13 @@ ul.socials {
   .services .info p {
     margin-bottom: 40px;
    }
+.project img {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.works .project img {
+	margin-bottom: 40px;
+
+}
 
 .work {
   display: inline-block;

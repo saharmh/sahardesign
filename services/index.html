@@ -7,7 +7,7 @@ services:
   desc: Logo Design, Brand Identity, Print Collateral
   image: images/service-brand.png
 - title: User Interface
-  desc: Styleguide, Layout Design, Icon Design, Product UI 
+  desc: Styleguide, Layout Design, Icon Design, Product UI
   image: images/service-ui.png
 - title: User Experience
   desc: Wireframing, Prototyping, Interaction Design
@@ -29,18 +29,6 @@ approach:
 - title: 04. LAUNCH
   desc: Once the website is tested, complete and working perfectly, with your approval we will launch it. Once the website is live, I continue to make refinements to constantly improve your project.
   image: images/process_04.png
-
-principles:
-- title: Work with passion
-  desc: I do what I love and I love what I do.
-  image: images/value-passion.png
-- title: Fail and Learn
-  desc: Try new thing. Test. Fail. Tweak &amp; Learn.
-  image: images/value-fail-learn.png
-- title: Repeat and Success
-  desc: Dolor sit amet, consectetur adipisicing elit. Maxime eos facilis
-    veniam obcaecati, fugiat illo soluta accusantium?
-  image: images/value-repeat-passion.png
 ---
 
 <div class="full centered-text services">
@@ -52,7 +40,7 @@ principles:
   </div>
 </div>
 
-<div class="full light-grey centered-text">
+<div class="full centered-text">
 
   <div class="row">
     {% for service in page.services %}
@@ -66,6 +54,19 @@ principles:
     {% endfor %}
   </div>
 </div>
+
+
+<div class="full">
+  <div class="row">
+    <div class="large-6 columns">
+      <img src="/images/home-sahar-hosseini.jpg" />
+    </div>
+    <div class="large-6 columns">
+      <img src="/images/about-sahar-hosseini.jpg" />
+    </div>
+  </div>
+</div>
+
 
 
 <div class="four spacing"></div>
@@ -94,27 +95,7 @@ principles:
   </div>
 {% endfor %}
 
-<div class="full light-grey centered-text">
-  <div class="section-title">
-    <div class="row">
-      <div class="medium-10 medium-centered columns">
-        <h2>My Values</h2>
-        <p>We have principles to do things</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    {% for principle in page.principles %}
-      <div class="large-4 columns">
-        <div class="principle">
-          <img src="{{site.url}}/{{principle.image}}" alt="">
-          <h4>{{principle.title}}</h4>
-          <p>{{principle.desc}}</p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+
 
 <!-- <div class="full centered-text">
   <div class="two spacing"></div>

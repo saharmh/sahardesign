@@ -458,6 +458,10 @@ ul.socials {
     margin-bottom: 30px;
     color: #; }
 
+/* About */
+.full-image img {
+	width: 100%;
+}
 /* Icon-text and service */
 .approach {
   border: 1px solid #f0f0f0;

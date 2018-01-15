@@ -6,14 +6,14 @@ services:
 - title: Branding &amp; Identity
   desc: Logo Design, Brand Identity, Print Collateral
   image: images/service-brand.png
-- title: User Interface
-  desc: Styleguide, Layout Design, Icon Design, Product UI
-  image: images/service-ui.png
 - title: User Experience
   desc: Wireframing, Prototyping, Interaction Design
   image: images/service-ux.png
+- title: User Interface
+  desc: Styleguide, Layout Design, Icon Design, Product UI
+  image: images/service-ui.png
 - title: Developement
-  desc: Responsive Design, Jekyll, Wordpress
+  desc: Front-end development, Responsive, Jekyll, Wordpress
   image: images/service-frontend.png
 
 approach:
@@ -31,97 +31,96 @@ approach:
   image: images/process_04.png
 
 ---
+<div class="page-container page-about">
 
-<div class="full centered-text services">
+  <div class="full centered-text services">
+    <div class="four spacing"></div>
+    <div class="section-title">
+      <div class="row">
+          <h1 class="wow slideInUp">Services</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="full centered-text">
+
+    <div class="row">
+      {% for service in page.services %}
+        <div class="large-3 columns">
+          <div class="principle">
+            <img src="{{site.url}}/{{service.image}}" alt="">
+            <h4>{{service.title}}</h4>
+            <p>{{service.desc}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="full">
+    <div class="row">
+      <div class="large-6 columns">
+        <img src="/images/home-sahar-hosseini.jpg" />
+      </div>
+      <div class="large-6 columns">
+        <img src="/images/about-sahar-hosseini.jpg" />
+      </div>
+    </div>
+  </div>
+
+
   <div class="four spacing"></div>
+  <!-- <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>My Process</h2>
+        <p>We have principles to do things</p>
+      </div>
+    </div>
+  </div>
+  {% for approach in page.approach %}
+    <div class="full no-padding">
+      <div class="row">
+          <div class="medium-6 columns">
+            <img src="{{site.url}}/{{approach.image}}" alt="">
+          </div>
+          <div class="medium-6 columns">
+            <div class="approach-info right-text">
+              <h3>{{approach.title}}</h3>
+              <p>{{approach.desc}}</p>
+            </div>
+          </div>
+      </div>
+      <div class="four spacing"></div>
+    </div>
+  {% endfor %} -->
+
+
   <div class="section-title">
     <div class="row">
-        <h1 class="wow slideInUp">Services</h1>
-    </div>
-  </div>
-</div>
-
-<div class="full centered-text">
-
-  <div class="row">
-    {% for service in page.services %}
-      <div class="large-3 columns">
-        <div class="principle">
-          <img src="{{site.url}}/{{service.image}}" alt="">
-          <h4>{{service.title}}</h4>
-          <p>{{service.desc}}</p>
-        </div>
+      <div class="medium-10 medium-centered columns">
+        <h2>My Process</h2>
+        <p>We have principles to do things</p>
       </div>
-    {% endfor %}
-  </div>
-</div>
-
-
-<div class="full">
-  <div class="row">
-    <div class="large-6 columns">
-      <img src="/images/home-sahar-hosseini.jpg" />
-    </div>
-    <div class="large-6 columns">
-      <img src="/images/about-sahar-hosseini.jpg" />
     </div>
   </div>
-</div>
+  <div class="full centered-text">
 
-
-<div class="four spacing"></div>
-<!-- <div class="section-title">
-  <div class="row">
-    <div class="medium-10 medium-centered columns">
-      <h2>My Process</h2>
-      <p>We have principles to do things</p>
-    </div>
-  </div>
-</div>
-{% for approach in page.approach %}
-  <div class="full no-padding">
     <div class="row">
-        <div class="medium-6 columns">
-          <img src="{{site.url}}/{{approach.image}}" alt="">
-        </div>
-        <div class="medium-6 columns">
-          <div class="approach-info right-text">
-            <h3>{{approach.title}}</h3>
+      {% for approach in page.approach %}
+        <div class="large-3 columns">
+          <div class="principle">
+            <img src="{{site.url}}/{{approach.image}}" alt="">
+            <h4>{{approach.title}}</h4>
             <p>{{approach.desc}}</p>
           </div>
         </div>
-    </div>
-    <div class="four spacing"></div>
-  </div>
-{% endfor %} -->
-
-
-<div class="section-title">
-  <div class="row">
-    <div class="medium-10 medium-centered columns">
-      <h2>My Process</h2>
-      <p>We have principles to do things</p>
+      {% endfor %}
     </div>
   </div>
+
 </div>
-<div class="full centered-text">
-
-  <div class="row">
-    {% for approach in page.approach %}
-      <div class="large-3 columns">
-        <div class="principle">
-          <img src="{{site.url}}/{{approach.image}}" alt="">
-          <h4>{{approach.title}}</h4>
-          <p>{{approach.desc}}</p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-
-
-
-
 <!-- <div class="full centered-text">
   <div class="two spacing"></div>
   <div class="row">

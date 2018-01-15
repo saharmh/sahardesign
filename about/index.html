@@ -35,110 +35,110 @@ testimonials_right:
   avatar: /images/author-james.jpg
 
 ---
+<div class="page-container page-services">
+  <div class="full light-grey centered-text about">
+    <div class="four spacing"></div>
+    <div class="section-title">
+      <div class="row">
+        <div class="medium-12 medium-centered columns">
+          <h1>About</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="full light-grey centered-text about">
-  <div class="four spacing"></div>
-  <div class="section-title">
+  <div class="full">
+    <div class="row">
+      <div class="large-4 columns">
+        <img src="/images/sahar-hosseini.jpg" />
+      </div>
+      <div class="large-8 columns">
+        <h3>I'm Sahar Hosseini</h3>
+
+        <p>I’m a digital designer and creative entrepreneur behind Sahar Design with over 10 years of experience of crafting online experiences for companies and brands.
+          My goal is to help brands and products tell their stories in a way that’s both inspired and functional.
+          From product and UX design, to user interfaces, to art direction, I can handle all aspects of the digital process.</p>
+
+        <p>I’ve worked with startup companies such as Strutta, QuickMobile, Work at Play and had the opportunity to work with
+          some of the world’s top brands such as Microsoft, Salesforce, Google, Intel, Disney, Accenture, Sundance,
+          TCM, MTV and Virgin Holidays.</p>
+
+        <p>Featured: <a href="https://www.smashingmagazine.com/2009/11/69-sexy-portfolio-designs-to-inspire-you/" target="_blank">SmashingMagazine</a>, <a href="https://www.sitepoint.com/color-in-design-singing-the-blues/" target="_blank">Sitepoint</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="full centered-text">
+    <div class="section-title">
+      <div class="row">
+        <div class="medium-10 medium-centered columns">
+          <h2>My Values</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for principle in page.principles %}
+        <div class="large-4 columns">
+          <div class="principle">
+            <img src="{{site.url}}/{{principle.image}}" alt="">
+            <p>{{principle.title}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="full centered-text full-image">
     <div class="row">
       <div class="medium-12 medium-centered columns">
-        <h1>About</h1>
+        <img src="/images/sahar.jpg" />
       </div>
     </div>
   </div>
-</div>
-
-<div class="full">
-  <div class="row">
-    <div class="large-6 columns">
-      <img src="/images/sahar-hosseini.jpg" />
-    </div>
-    <div class="large-6 columns">
-      <h3>I'm Sahar Hosseini</h3>
-
-      <p>The graphic designer and creative entrepreneur behind SaharDesign.</p>
-      <p>I’m a digital designer with over 10 years of experience of crafting online experiences for companies and brands.
-        My goal is to help brands and products tell their stories in a way that’s both inspired and functional.
-        From product and UX design, to user interfaces, to art direction, I can handle all aspects of the digital process.</p>
-
-      <p>I’ve worked with startup companies such as Strutta, QuickMobile, Work at Play and had the opportunity to work with
-        some of the world’s top brands such as Microsoft, Salesforce, Google, Intel, Disney, Accenture, Sundance,
-        TCM, MTV and Virgin Holidays.</p>
-
-      <p>Recognition: SmashingMagazine, Sitepoint</p>
-    </div>
-  </div>
-</div>
 
 
-<div class="full centered-text">
-  <div class="section-title">
-    <div class="row">
-      <div class="medium-10 medium-centered columns">
-        <h2>My Values</h2>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    {% for principle in page.principles %}
-      <div class="large-4 columns">
-        <div class="principle">
-          <img src="{{site.url}}/{{principle.image}}" alt="">
-          <p>{{principle.title}}</p>
+  <div class="full">
+    <div class="section-title">
+      <div class="row">
+        <div class="medium-10 medium-centered columns">
+          <h2>Testimonials</h2>
+          <p>We are happy to work with our clients and let thme happy</p>
         </div>
       </div>
-    {% endfor %}
-  </div>
-</div>
-
-
-<div class="full centered-text full-image">
-  <div class="row">
-    <div class="medium-12 medium-centered columns">
-      <img src="/images/sahar.jpg" />
     </div>
-  </div>
-</div>
-
-
-<div class="full">
-  <div class="section-title">
     <div class="row">
-      <div class="medium-10 medium-centered columns">
-        <h2>Testimonials</h2>
-        <p>We are happy to work with our clients and let thme happy</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-6 columns">
-      {% for testimonial in page.testimonials_left %}
-        <div class="quote wow slideInLeft" data-wow-delay="{{ 0.1 | times:forloop.index0 }}s">
-          <div class="row">
-            <div class="small-3 columns">
-              <img src="{{testimonial.avatar}}" alt="auhor">
-            </div>
-            <div class="small-9 columns">
-              <p>{{testimonial.content}}</p>
-              <p class="author">{{testimonial.author}}</p>
+      <div class="large-6 columns">
+        {% for testimonial in page.testimonials_left %}
+          <div class="quote wow slideInLeft" data-wow-delay="{{ 0.1 | times:forloop.index0 }}s">
+            <div class="row">
+              <div class="small-3 columns">
+                <img src="{{testimonial.avatar}}" alt="auhor">
+              </div>
+              <div class="small-9 columns">
+                <p>{{testimonial.content}}</p>
+                <p class="author">{{testimonial.author}}</p>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="large-6 columns">
-      {% for testimonial in page.testimonials_right %}
-        <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.1 | times:forloop.index0 }}s">
-          <div class="row">
-            <div class="small-3 columns">
-              <img src="{{testimonial.avatar}}" alt="auhor">
-            </div>
-            <div class="small-9 columns">
-              <p>{{testimonial.content}}</p>
-              <p class="author">{{testimonial.author}}</p>
+        {% endfor %}
+      </div>
+      <div class="large-6 columns">
+        {% for testimonial in page.testimonials_right %}
+          <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.1 | times:forloop.index0 }}s">
+            <div class="row">
+              <div class="small-3 columns">
+                <img src="{{testimonial.avatar}}" alt="auhor">
+              </div>
+              <div class="small-9 columns">
+                <p>{{testimonial.content}}</p>
+                <p class="author">{{testimonial.author}}</p>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

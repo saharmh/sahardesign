@@ -4702,20 +4702,25 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 
 /* Default Link Styles */
 a {
-  color: #AB8860;
+  color: #50b5b5;
   line-height: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+   }
   a:hover, a:focus {
-    color: #96754f; }
+    color: #309c9c; }
   a img {
     border: none; }
+
+.page-container a {
+  border-bottom: 1px solid #50b5b5;
+}
 
 /* Default paragraph styles */
 p {
   font-family: inherit;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {

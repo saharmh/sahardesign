@@ -29,6 +29,7 @@ approach:
 - title: 04. LAUNCH
   desc: Once the website is tested, complete and working perfectly, with your approval we will launch it. Once the website is live, I continue to make refinements to constantly improve your project.
   image: images/process_04.png
+
 ---
 
 <div class="full centered-text services">
@@ -68,7 +69,6 @@ approach:
 </div>
 
 
-
 <div class="four spacing"></div>
 <div class="section-title">
   <div class="row">
@@ -94,6 +94,24 @@ approach:
     <div class="four spacing"></div>
   </div>
 {% endfor %}
+
+<hr>
+
+<div class="full centered-text">
+
+  <div class="row">
+    {% for approach in page.approach %}
+      <div class="large-3 columns">
+        <div class="principle">
+          <img src="{{site.url}}/{{approach.image}}" alt="">
+          <h4>{{approach.title}}</h4>
+          <p>{{approach.desc}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
 
 
 

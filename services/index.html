@@ -1,19 +1,19 @@
 ---
 layout: default
 section_id: pages
-services_left:
-- title: BRANDING &amp; IDENTITY
-  desc: Before we start our project together I’d like to get to know you and learn about your business so we have a better connection and understanding. In addition I research your competitors and create a full spec ready for our next stages to ensure the best quality delivered.
+
+services:
+- title: Branding &amp; Identity
+  desc: Logo Design &amp; Identity, Print Collateral
   image: images/service-branding.png
-- title: USER EXPERIENCE
-  desc: I usually get started by creating concepts for your project so you can be involved in all the decisions to ensure it reflects your vision and your goals. I love to create beautiful designs but most importantly make it work for your audience.
-  image: images/service-ux.png
-services_right:
-- title: USER INTERFACE
-  desc: In this stage, I take the design and make working prototypes before going to final production. By using the latest web technologies to ensure your website is future-friendly and supported by all major browsers.
+- title: User Interface 
+  desc: Styleguide, Product UI, Icon Design
   image: images/service-ui.png
-- title: DEVELOPMENT
-  desc: In this stage, I take the design and make working prototypes before going to final production. By using the latest web technologies to ensure your website is future-friendly and supported by all major browsers.
+- title: User Experience
+  desc: Wireframing, Prototyping, Interaction Design
+  image: images/service-ux.png
+- title: Developement
+  desc: Responsive Design, Jekyll, Wordpress
   image: images/service-frontend.png
 
 approach:
@@ -32,12 +32,10 @@ approach:
 
 principles:
 - title: Work with passion
-  desc: Lorem ipsum dolor sit amet adipisicing elit. Maxime eos facilis
-    veniam obcaecati, fugiat illo soluta accusantium?
+  desc: I do what I love
   image: images/value-passion.png
 - title: Fail and Learn
-  desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
-    nihil accusamus sint et repudiandae.
+  desc: Try new thing. Test. Fail. Tweak &amp; Learn.
   image: images/value-fail-learn.png
 - title: Repeat and Success
   desc: Dolor sit amet, consectetur adipisicing elit. Maxime eos facilis
@@ -54,40 +52,20 @@ principles:
   </div>
 </div>
 
+<div class="full light-grey centered-text">
 
-<div class="full no-padding light-grey">
-  <div class="four spacing"></div>
   <div class="row">
-    <div class="medium-6 columns">
-      {% for services in page.services_left %}
-        <div class="services-wrapper">
-          <div class="services">
-            <img src="{{site.url}}/{{services.image}}" alt="">
-            <div class="info">
-              <h3>{{services.title}}</h3>
-              <p>{{services.desc}}</p>
-            </div>
-          </div>
+    {% for service in page.services %}
+      <div class="large-3 columns">
+        <div class="principle">
+          <img src="{{site.url}}/{{service.image}}" alt="">
+          <h4>{{service.title}}</h4>
+          <p>{{service.desc}}</p>
         </div>
-      {% endfor %}
-    </div>
-    <div class="medium-6 columns">
-      {% for services in page.services_right %}
-        <div class="services-wrapper">
-          <div class="services">
-            <img src="{{site.url}}/{{services.image}}" alt="">
-            <div class="info">
-              <h3>{{services.title}}</h3>
-              <p>{{services.desc}}</p>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
   </div>
-  <div class="four spacing"></div>
 </div>
-
 
 
 <div class="four spacing"></div>
@@ -137,6 +115,7 @@ principles:
     {% endfor %}
   </div>
 </div>
+
 <div class="full centered-text">
   <div class="two spacing"></div>
   <div class="row">

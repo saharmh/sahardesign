@@ -1310,8 +1310,10 @@ form.update-form input.button:hover {
   display: none; }
 
 /* principles */
-.principle {
-  margin-bottom: 40px; }
+.principle img {
+	max-height: 150px;
+	margin-bottom: 10px;
+}
   .principle i {
     font-size: 48px;
     margin-bottom: 10px;

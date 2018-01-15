@@ -81,26 +81,30 @@ purple #9055a3
 .full.about {
     min-height: 60%;
     background-image: url(../images/header_about.png);
-    background-repeat: repeat;
-    background-color: #9055a3;}
+		background-color: #50b5b5;
+
+	}
 
 .full.contact {
+		min-height: 60%;
     background-image: url(../images/header_contact.png);
-    background-repeat: no-repeat;
-    background-color: #50b5b5;
-    background-position: 80% 30%; }
+    background-repeat: repeat;
+		background-color: #9055a3;
+	}
 
 .full.works {
     min-height: 60%;
     background-image: url(../images/header_works.png);
     background-repeat: repeat;
-    background-color: #E74C66;}
+    background-color: #E74C66;
+	}
 
 .full.services {
     min-height: 60%;
     background-image: url(../images/header-services.png);
     background-repeat: repeat;
-    background-color: #E2C159;}
+    background-color: #E2C159;
+	}
 
 .full.approach {
     min-height: 60%;
@@ -110,9 +114,7 @@ purple #9055a3
     background-position: 80% 70%;
     background-color: #50b5b5;
   }
-.full.golnaz {
-    background-color: #9055a3;
-  }
+
 .full.blog {
     min-height: 60%;
     background-image: url(../images/header_blog.png);

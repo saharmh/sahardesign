@@ -81,8 +81,8 @@ purple #9055a3
 .full.about {
     min-height: 60%;
     background-image: url(../images/header_about.png);
+		background-repeat: repeat;
 		background-color: #50b5b5;
-
 	}
 
 .full.contact {
@@ -104,16 +104,7 @@ purple #9055a3
     background-image: url(../images/header-services.png);
     background-repeat: repeat;
     background-color: #E2C159;
-	}
-
-.full.approach {
-    min-height: 60%;
-    background-image: url(../images/header_approach.png);
-    background-repeat: no-repeat;
-    background-size: 480px;
-    background-position: 80% 70%;
-    background-color: #50b5b5;
-  }
+	} d
 
 .full.blog {
     min-height: 60%;

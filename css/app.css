@@ -4711,16 +4711,12 @@ a {
   a img {
     border: none; }
 
-.page-container a {
-  border-bottom: 1px solid #50b5b5;
-}
-
 /* Default paragraph styles */
 p {
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: normal;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {

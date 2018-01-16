@@ -163,14 +163,13 @@ a {
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Graphik-bold';
-  margin-top: 0;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Graphik-bold', helvetica, sans-serif;
+  margin-top: 0; }
 h1 {
-  font-family: 'Graphik-bold';
  font-weight: bold;
  font-style: normal;
-  text-transform: uppercase;
+ text-transform: uppercase;
 }
 h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
   color: #fff; }
@@ -241,19 +240,6 @@ body {
   -moz-animation: rotate 10s ease-in-out infinite;
   animation: rotate 10s ease-in-out infinite; }
 
-.small-video {
-  width: 570px;
-  height: 361px;
-  position: absolute;
-  z-index: 20; }
-
-.big-video {
-  position: relative;
-  bottom: -100px;
-  width: 860px;
-  height: 481px;
-  margin: -100px auto 60px;
-  z-index: 20; }
 
 /* button */
 .button {
@@ -458,13 +444,6 @@ ul.socials {
   border-bottom: 1px solid #50b5b5;
 }
 /* Icon-text and service */
-.approach {
-  border: 1px solid #f0f0f0;
-  border-right: none;
-  border-bottom: none;
-  overflow: hidden; }
-  .approach .columns {
-    padding: 0; }
 
 .icon-text {
   padding: 80px 60px;
@@ -504,13 +483,13 @@ ul.socials {
 .icon-text:hover::after {
   opacity: 1; }
 
-.approach-info {
+/*.approach-info {
   padding-top: 40px; }
 
 .approach-info.right-text {
   text-align: left;
   margin-top: 50px;
- }
+ }*/
 
  .services {
    overflow: hidden;
@@ -539,9 +518,12 @@ ul.socials {
 .project img {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
+.works {
+	position: relative;
+	top: -100px;
+}
 .works .project img {
 	margin-bottom: 40px;
-
 }
 
 .work {
@@ -797,7 +779,6 @@ nav.wrapper {
   .slide-info h1 {
     text-transform: uppercase;
     line-height: 1.2em;
-    font-family: "Chivo";
     font-size: 66px;
     letter-spacing: 4px;
     opacity: 0;

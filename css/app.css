@@ -4714,7 +4714,7 @@ a {
 /* Default paragraph styles */
 p {
   font-family: inherit;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -4730,7 +4730,6 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
-  font-family: Raleway, helvetica, sans-serif;;
   font-style: normal;
   font-weight: bold;
   line-height: 1.4;
@@ -5009,7 +5008,7 @@ blockquote, blockquote p {
     width: 1rem; }
   .tab-bar .menu-icon span:hover:after {
     box-shadow: 0 0 0 1px #b3b3b3, 0 7px 0 1px #b3b3b3, 0 14px 0 1px #b3b3b3; }
-
+/*
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
   background: #333333;
@@ -5056,7 +5055,7 @@ blockquote, blockquote p {
   transform: translate3d(100%, 0, 0);
   right: 0; }
   .right-off-canvas-menu * {
-    -webkit-backface-visibility: hidden; }
+    -webkit-backface-visibility: hidden; }*/
 
 ul.off-canvas-list {
   list-style-type: none;

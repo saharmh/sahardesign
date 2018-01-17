@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 6 Best Online Courses
-author: hornyou
+author: Sahar Hosseini
 date: 2016-04-06 06:50:03 +0800
-categories: travel
+categories: Design
 images:
 - images/header_learning_post.png
 excerpt:
-  Today I choose life. Every morning when I wake up I can choose joy, happiness, negativity, pain... To feel the freedom that comes from being able to continue to make mistakes and choices.
+  I love to learn new skills! Whether it’s for my professional life or personal, I’m always looking for ways to improve. How about you?
 ---
 
 I love to learn new skills! Whether it’s for my professional life or personal, I’m always looking for ways to improve. How about you?

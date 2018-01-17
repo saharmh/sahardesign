@@ -6,8 +6,7 @@ date: 2016-04-06 06:47:03 +0800
 categories: design
 images:
 - images/header_design_styleguide_post.png
-excerpt:
-  A consistent brand makes the visual aspects easily identified, and creates trust between your business and your customers.
+excerpt: One of the most important aspects in having a successful brand is consistency.
 ---
 
 One of the most important aspects in having a successful brand is consistency.

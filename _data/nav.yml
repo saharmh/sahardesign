@@ -7,14 +7,9 @@
 - name: Work
   path: work/
   section_id: work
-  children:
-    # - name: Portfolio Style 1
-    #   path: portfolio.html
-    # - name: Portfolio Style 2
-    #   path: portfolio-2.html
-- name: Contact
-  path: contact/
-  section_id: contact
 - name: Blog
   path: blog/index.html
   section_id: blog
+- name: Contact
+  path: contact/
+  section_id: contact

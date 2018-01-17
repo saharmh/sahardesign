@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HOW TO CREATE AN EFFECTIVE STYLE GUIDE
+title: How to create an effective style guide
 author: Sahar Hosseini
 date: 2016-04-06 06:47:03 +0800
 categories: design

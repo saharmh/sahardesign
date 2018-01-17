@@ -242,8 +242,7 @@ body {
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  font-size: 14px;
-  padding: 12px 15px 10px; }
+  font-size: 14px; }
 
 .button::before {
   content: "";
@@ -412,6 +411,10 @@ ul.socials {
   overflow-x: hidden;
   width: 100%; }
 
+.quote img {
+	border-radius: 90%;
+}
+
 .quote.reverse {
   text-align: left;
   padding: 40px 20px 20px 40px; }
@@ -437,7 +440,7 @@ ul.socials {
 	padding-top: 320px;
 }
 .hero-text h2 {
-	
+
 }
 /* About */
 .full-image img {
@@ -682,9 +685,10 @@ nav.wrapper {
 
 .post.alt {
   border: none;
-  padding: 0 40px; }
+   }
+
   .post.alt .post-content {
-    padding: 20px 40px; }
+    padding-top: 20px; }
 
 .post.single {
   border: none;

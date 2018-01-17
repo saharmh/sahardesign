@@ -390,13 +390,12 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #fff;
- }
+  color: #fff; }
 
 /*footer nav*/
 ul.footer-nav li {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 13px;
 	padding: 0 10px !important; }
 
 /*socials*/
@@ -446,9 +445,6 @@ ul.socials {
 .hero-text {
 	padding-top: 320px;
 }
-.hero-text h2 {
-
-}
 /* About */
 .full-image img {
 	width: 100%;
@@ -495,8 +491,6 @@ ul.socials {
 
 .icon-text:hover::after {
   opacity: 1; }
-
-
  .services {
    overflow: hidden;
    }
@@ -532,13 +526,11 @@ ul.socials {
 .works-wrapper .project img {
 	margin-bottom: 40px;
 }
-
 .work {
   display: inline-block;
   margin: 0 auto 100px;
   margin-bottom: 60px;
    }
-
 .work .info {
   margin-top: 25px;
   /*margin-left: 50px;*/

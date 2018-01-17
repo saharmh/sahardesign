@@ -396,6 +396,7 @@ body {
 /*footer nav*/
 ul.footer-nav li {
 	display: inline-block;
+	font-size: 12px;
 	padding: 0 10px !important; }
 
 /*socials*/

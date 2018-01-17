@@ -38,7 +38,7 @@ Learn more at lynda.com
 
 ### 02.TREEHOUSE
 
-![](/images/post/learning_threehouse.jpg)
+![](/images/post/learning_treehouse.jpg)
 
 Treehouse is more focused on web and mobile development than other desktop applications. Through their courses you’ll be able to learn about HTML, CSS, WordPress, and iOS platforms for app development.
 

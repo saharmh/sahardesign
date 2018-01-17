@@ -63,13 +63,16 @@
   }
   p.author { font-size: 12px;}
 
-  li.logo {padding-left: 10px;}
+  li.logo {padding-left: 20px;}
 
   .work {
     margin-bottom: 50px;
   }
   .project img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+  }
+  .services-photo img {
+    margin-bottom: 20px;
   }
 
   .top-bar {

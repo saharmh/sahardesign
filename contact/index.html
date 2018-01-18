@@ -32,32 +32,18 @@ section_id: contact
 
       <div class="two spacing"></div>
 
-
-
     </div>
     <div class="large-8 columns">
 
       <form method="POST" action="http://formspree.io/saharmh@gmail.com">
-        <input class="required" name="name" placeholder="NAME" type="text">
-        <input class="required" type="email" name="email" placeholder="EMAIL">
-        <input type="hidden" name="_subject" value="New submission!" />
-        <textarea class="required" name="message" placeholder="MESSAGE"></textarea>
-        <input type="hidden" name="_next" value="/contact/thanks.html" />
+        <input class="required" name="name" placeholder="NAME" type="text" required>
+        <input class="required" type="email" name="email" placeholder="EMAIL" required>
+        <textarea class="required" name="message" placeholder="MESSAGE" required></textarea>
+        <input type="hidden" name="_next" value="//sahardesign.com/contact/thanks.html" />
+        <input type="hidden" name="_subject" value="Website Contact!" />
         <button class="button boxed brown" type="submit">Send</button>
       </form>
 
-      <!-- <div class="form">
-        <form id="contact_form" method="POST" action="http://formspree.io/saharmh@gmail.com">
-          <p id="thanks" class="hide">
-            Thanks for contacting me, I"ll be in touch soon!
-          </p>
-          <input class="required" name="name" placeholder="NAME" type="text">
-          <input class="required email" name="email" placeholder="EMAIL" type="text">
-          <input class="required" name="subject" placeholder="SUBJECT" type="text">
-          <textarea class="required" name="message" placeholder="MESSAGE"></textarea>
-          <input class="button boxed brown" type="submit" value="Send">
-        </form>
-      </div> -->
     </div>
   </div>
 </div>

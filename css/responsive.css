@@ -45,9 +45,17 @@
     display: none; } }
 
 @media only screen and (max-width: 1024px) {
+  .full.light-grey {
+    background: #fff;
+  }
+  .full.light-grey p {
+    margin-top: 40px;
+  }
+  .full.light-grey h1 {
+    font-size: 2.6rem;
+  }
   p, .section-work-title p {
     font-size: 1rem;}
-
   .hero-text {
   	padding-top: 40px;
   }
@@ -67,6 +75,9 @@
 
   .work {
     margin-bottom: 50px;
+  }
+  .section-image, .works-wrapper {
+    top: 0;
   }
   .project img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)

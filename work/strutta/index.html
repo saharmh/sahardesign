@@ -5,6 +5,22 @@ title: Strutta
 services: Branding, Web Design, UI/UX
 about: <p>Strutta's industry leading technology connects brands with their target consumers through powerful social promotions. Its do-it-yourself tools allow agencies, brands and developers to easily create and manage interactive contests and sweepstakes.</p>
 
+related:
+- title: Strutta
+  link_to: ../work/strutta/
+  image: images/work/project-strutta.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: SailMail
+  link_to: ../sailmail/
+  image: images/work/project-sailmail.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: Dr. Golnaz Golnaraghi
+  link_to: ../golnaz-golnaraghi/
+  image: images/work/project-gg.jpg
+  categories: Branding, Web Design
+
 ---
 
 <div class="full light-grey">
@@ -82,39 +98,20 @@ about: <p>Strutta's industry leading technology connects brands with their targe
 
   <div class="related-works">
     <div class="row">
+      {% for related in page.related %}
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="/work/golnaz-golnaraghi" class="work">
-            <img src="/images/work/project-gg.jpg" alt="">
+          <a href="{{related.link_to}}" class="work">
+            <img src="{{site.url}}/{{related.image}}" alt="">
             <div class="info">
-              <h3>Golnaz Golnaraghi</h3>
-              <p>Website, brand</p>
+              <h3>{{related.title}}</h3>
+              <p>{{related.categories}}</p>
             </div>
           </a>
         </div>
       </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/strutta" class="work">
-          <img src="/images/work/project-strutta.jpg" alt="">
-          <div class="info">
-            <h3>Strutta</h3>
-            <p>Website, UI, UX</p>
-          </div>
-        </a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/sailmail/" class="work">
-            <img src="/images/work/project-sailmail.jpg" alt="">
-            <div class="info">
-              <h3>SailMail</h3>
-              <p>Product, UI, UX</p>
-            </div>
-          </a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
+
 </div>

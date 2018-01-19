@@ -4,6 +4,24 @@ section_id: portfolio
 title: Dr. Golnaz Golnaraghi
 services: Branding, Web Design
 about: <p>Golnaz is an senior facilitator, educator, researcher, author and speaker who is passionate about leadership development, diversity in workplaces, creative problem solving, positive psychology and emotional intelligence.</p>
+
+related:
+- title: Strutta
+  link_to: ../work/strutta/
+  image: images/work/project-strutta.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: SailMail
+  link_to: ../sailmail/
+  image: images/work/project-sailmail.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: Neekoo Society
+  link_to: ../neekoo/
+  image: images/work/project-neekoo.jpg
+  categories: Branding, Web Design
+
+
 ---
 
 <div class="full light-grey">
@@ -33,6 +51,14 @@ about: <p>Golnaz is an senior facilitator, educator, researcher, author and spea
   </div>
 </div>
 
+<div class="works-wrapper">
+  <div class="row">
+    <div class="medium-10 medium-centered columns project">
+      <img alt="{{page.title}}" src="/images/work/project-gg1.jpg" />
+    </div>
+  </div>
+</div>
+
 <div class="section-work-title">
   <div class="row">
     <div class="medium-8 medium-centered columns">
@@ -57,39 +83,20 @@ about: <p>Golnaz is an senior facilitator, educator, researcher, author and spea
 
   <div class="related-works">
     <div class="row">
+      {% for related in page.related %}
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="/work/Sidebuy" class="work">
-            <img src="/images/work/project-sidebuy.jpg" alt="">
+          <a href="{{related.link_to}}" class="work">
+            <img src="{{site.url}}/{{related.image}}" alt="">
             <div class="info">
-              <h3>Sidebuy</h3>
-              <p>UI,UX</p>
+              <h3>{{related.title}}</h3>
+              <p>{{related.categories}}</p>
             </div>
           </a>
         </div>
       </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/strutta" class="work">
-          <img src="/images/work/project-strutta.jpg" alt="">
-          <div class="info">
-            <h3>Strutta</h3>
-            <p>Website, UI, UX</p>
-          </div>
-        </a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/sailmail/" class="work">
-            <img src="/images/work/project-sailmail.jpg" alt="">
-            <div class="info">
-              <h3>SailMail</h3>
-              <p>Product, UI, UX</p>
-            </div>
-          </a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
+
 </div>

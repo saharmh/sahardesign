@@ -7,6 +7,24 @@ about: <p>Sidebuy is a data-driven influencer marketing platform that matches br
   content and amplify its outreach through their engaged audiences. Sidebuy intelligently tracks, measures and reports the performance
    of the campaigns to provide feedback and analytics to both the brands and influencers, maximizing conversion rate,
     return on marketing investment, creativity and the power of the brand message. </p>
+
+related:
+- title: Neekoo Society
+  link_to: ../neekoo/
+  image: images/work/project-neekoo.jpg
+  categories: Branding, Web Design
+
+- title: Tandar Tanavoli
+  link_to: ../tandar-tanavoli/
+  image: images/work/project-tandar.jpg
+  categories: Branding, Web Design
+
+- title: Carnotech
+  link_to: ../carnotech/
+  image: images/work/project-carnotech.jpg
+  categories: Branding, Web Design
+
+
 ---
 
 <div class="full light-grey">
@@ -52,39 +70,20 @@ about: <p>Sidebuy is a data-driven influencer marketing platform that matches br
 
   <div class="related-works">
     <div class="row">
+      {% for related in page.related %}
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="/work/golnaz-golnaraghi" class="work">
-            <img src="/images/work/project-gg.jpg" alt="">
+          <a href="{{related.link_to}}" class="work">
+            <img src="{{site.url}}/{{related.image}}" alt="">
             <div class="info">
-              <h3>Golnaz Golnaraghi</h3>
-              <p>Website, brand</p>
+              <h3>{{related.title}}</h3>
+              <p>{{related.categories}}</p>
             </div>
           </a>
         </div>
       </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/strutta" class="work">
-          <img src="/images/work/project-strutta.jpg" alt="">
-          <div class="info">
-            <h3>Strutta</h3>
-            <p>Website, UI, UX</p>
-          </div>
-        </a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/sailmail/" class="work">
-            <img src="/images/work/project-sailmail.jpg" alt="">
-            <div class="info">
-              <h3>SailMail</h3>
-              <p>Product, UI, UX</p>
-            </div>
-          </a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
+
 </div>

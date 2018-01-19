@@ -5,6 +5,23 @@ title: SailMail
 services: Branding, Web Design, UI/UX
 about: <p>SailMail is a MailChimp integration that allows you to run contests and giveaways with your List Members. Implement automatic giveaways and random draws that will help you to improve your email sign up rates.</p>
 date: 2016
+
+related:
+- title: Sidebuy
+  link_to: ../sidebuy/
+  image: images/work/project-sidebuy.jpg
+  categories: UI/UX
+
+- title: Neekoo Society
+  link_to: ../neekoo/
+  image: images/work/project-neekoo.jpg
+  categories: Branding, Web Design
+
+- title: Carnotech
+  link_to: ../carnotech/
+  image: images/work/project-carnotech.jpg
+  categories: Branding, Web Design
+
 ---
 
 <div class="full light-grey">
@@ -64,39 +81,20 @@ date: 2016
 
   <div class="related-works">
     <div class="row">
+      {% for related in page.related %}
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="/work/golnaz-golnaraghi" class="work">
-            <img src="/images/work/project-gg.jpg" alt="">
+          <a href="{{related.link_to}}" class="work">
+            <img src="{{site.url}}/{{related.image}}" alt="">
             <div class="info">
-              <h3>Golnaz Golnaraghi</h3>
-              <p>Website, brand</p>
+              <h3>{{related.title}}</h3>
+              <p>{{related.categories}}</p>
             </div>
           </a>
         </div>
       </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/strutta" class="work">
-          <img src="/images/work/project-strutta.jpg" alt="">
-          <div class="info">
-            <h3>Strutta</h3>
-            <p>Website, UI, UX</p>
-          </div>
-        </a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/sailmail/" class="work">
-            <img src="/images/work/project-sailmail.jpg" alt="">
-            <div class="info">
-              <h3>SailMail</h3>
-              <p>Product, UI, UX</p>
-            </div>
-          </a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
+
 </div>

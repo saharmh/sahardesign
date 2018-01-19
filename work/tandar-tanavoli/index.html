@@ -5,6 +5,23 @@ title: Tandar Tanavoli
 services: Branding, Website
 about: Tandar Tanavoli is an entrepreneur, philanthropist, coach and motivational speaker. Founding Tandar Tanavoli Results International (TTRI) in 2007, with a focus on international lifestyle, personal and professional coaching, as well as motivational educational seminars. She helps motivate her clients move through their self-limiting beliefs, mindset blocks, and emotional resilience while moving forward with clarity to achieve their goals and learn about their passions to deliver their life’s purpose.
 date: 2014
+
+related:
+- title: Strutta
+  link_to: ../strutta/
+  image: images/work/project-strutta.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: Neekoo Society
+  link_to: ../neekoo/
+  image: images/work/project-neekoo.jpg
+  categories: Branding, Web Design
+
+- title: QuickMobile
+  link_to: ../quickmobile/
+  image: images/work/project-qm.jpg
+  categories: UI/UX
+
 ---
 
 <div class="full light-grey">
@@ -70,39 +87,20 @@ date: 2014
 
   <div class="related-works">
     <div class="row">
+      {% for related in page.related %}
       <div class="large-4 columns">
         <div class="work-wrapper">
-          <a href="/work/golnaz-golnaraghi" class="work">
-            <img src="/images/work/project-gg.jpg" alt="">
+          <a href="{{related.link_to}}" class="work">
+            <img src="{{site.url}}/{{related.image}}" alt="">
             <div class="info">
-              <h3>Golnaz Golnaraghi</h3>
-              <p>Website, brand</p>
+              <h3>{{related.title}}</h3>
+              <p>{{related.categories}}</p>
             </div>
           </a>
         </div>
       </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/strutta" class="work">
-          <img src="/images/work/project-strutta.jpg" alt="">
-          <div class="info">
-            <h3>Strutta</h3>
-            <p>Website, UI, UX</p>
-          </div>
-        </a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="work-wrapper">
-          <a href="/work/sailmail/" class="work">
-            <img src="/images/work/project-sailmail.jpg" alt="">
-            <div class="info">
-              <h3>SailMail</h3>
-              <p>Product, UI, UX</p>
-            </div>
-          </a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
+
 </div>

@@ -127,7 +127,7 @@ testimonials_right:
   <div class="row">
     <div class="large-6 columns">
       {% for testimonial in page.testimonials_left %}
-        <div class="quote wow slideInLeft" data-wow-delay="{{ 0.1 | times:forloop.index0 }}s">
+        <div class="quote">
           <div class="row">
             <div class="small-3 columns">
               <img src="{{testimonial.avatar}}" alt="auhor">
@@ -142,7 +142,7 @@ testimonials_right:
     </div>
     <div class="large-6 columns">
       {% for testimonial in page.testimonials_right %}
-        <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.1 | times:forloop.index0 }}s">
+        <div class="quote">
           <div class="row">
             <div class="small-3 columns">
               <img src="{{testimonial.avatar}}" alt="auhor">

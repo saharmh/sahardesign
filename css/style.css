@@ -493,7 +493,7 @@ ul.socials {
   .work .info p::before {
     content: "";
     width: 35px;
-    height: 1px;
+    height: 2px;
     background: #999;
     display: inline-block;
     position: relative;

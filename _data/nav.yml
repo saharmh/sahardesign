@@ -7,9 +7,6 @@
 - name: Work
   path: work/
   section_id: work
-- name: Blog
-  path: blog/
-  section_id: blog
 - name: Contact
   path: contact/
   section_id: contact

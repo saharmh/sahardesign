@@ -1,12 +1,18 @@
 ---
 layout: default
 section_id: portfolio
+
+works_middle:
+- title: Parviz Tanavoli
+  link_to: tanavoli/
+  image: images/work/project-tanavoli.jpg
+  categories: Art Direction, Web Deisgn
+
 works_left:
 - title: Strutta
   link_to: strutta/
   image: images/work/project-strutta.jpg
   categories: Branding, Web Design, UI/UX
-
 
 
 - title: Tagwin
@@ -61,6 +67,25 @@ works_right:
 
 <div class="four spacing"></div>
 
+
+
+<div class="full no-padding">
+  <div class="row">
+    <div class="medium-12 columns">
+      {% for work in page.works_middle %}
+        <div class="work-wrapper">
+          <a href="{{work.link_to}}" class="work">
+            <img src="{{site.url}}/{{work.image}}" alt="">
+            <div class="info">
+              <h3>{{work.title}}</h3>
+              <p>{{work.categories}}</p>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 <div class="full no-padding">
   <div class="row">

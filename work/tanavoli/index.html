@@ -1,0 +1,88 @@
+---
+layout: default
+section_id: portfolio
+title: Tanavoli
+services: Art Direction, Web Design
+about: <p>Parviz Tanavoli is the most acclaimed internationally recognized modern Iranian sculptor.</p><p> He's been named “The father of modern Iranian Art" and his works are featured in many renowned museums and galleries across the world including The British Museum, The Metropolitan Museum, New York, Museum of Modern Art New York, Tate Modern, London,  Museum of Anthropology Vancouver.</p>
+date: 2016
+
+related:
+- title: Strutta
+  link_to: ../work/strutta/
+  image: images/work/project-strutta.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: SailMail
+  link_to: ../sailmail/
+  image: images/work/project-sailmail.jpg
+  categories: Branding, Web Design, UI/UX
+
+- title: Dr. Golnaz Golnaraghi
+  link_to: ../golnaz-golnaraghi/
+  image: images/work/project-gg.jpg
+  categories: Branding, Web Design
+
+---
+
+<div class="full light-grey">
+  <div class="four spacing"></div>
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-12 medium-centered columns">
+        <p>{{page.services}}</p>
+        <h1>{{page.title}}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-image">
+  <div class="row">
+    <div class="medium-10 medium-centered columns project">
+      <img alt="{{page.title}}" src="/images/work/project-tanavoli.jpg" />
+    </div>
+  </div>
+</div>
+
+<div class="section-work-title">
+  <div class="row">
+    <div class="medium-8 medium-centered columns">
+      {{page.about}}
+      <a href="http://www.tanavoli.com" alt="Parviz Tanavoli" target="_blank">Visit Site</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="four spacing"></div>
+
+<hr>
+
+<div class="full">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>More Works</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="related-works">
+    <div class="row">
+      {% for related in page.related %}
+      <div class="large-4 columns">
+        <div class="work-wrapper">
+          <a href="{{related.link_to}}" class="work">
+            <img src="{{site.url}}/{{related.image}}" alt="">
+            <div class="info">
+              <h3>{{related.title}}</h3>
+              <p>{{related.categories}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
